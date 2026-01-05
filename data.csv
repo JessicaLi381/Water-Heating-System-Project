@@ -47,10 +47,10 @@ time,material,temp,cost
 25,FoilAirGap,41.8,1.00
 30,FoilAirGap,41.0,1.00
 
-0,ThermosBenchmark,60.0,15.00
-5,ThermosBenchmark,58.9,15.00
-10,ThermosBenchmark,57.9,15.00
-15,ThermosBenchmark,57.0,15.00
-20,ThermosBenchmark,56.2,15.00
-25,ThermosBenchmark,55.5,15.00
-30,ThermosBenchmark,54.8,15.00
+0,Thermos,60.0,15.00
+5,Thermos,58.9,15.00
+10,Thermos,57.9,15.00
+15,Thermos,57.0,15.00
+20,Thermos,56.2,15.00
+25,Thermos,55.5,15.00
+30,Thermos,54.8,15.00
