@@ -1,4 +1,4 @@
-time,material,temp,cost
+time_min,material,temp_C,cost_cad
 0,None,60.0,0.00
 5,None,48.3,0.00
 10,None,41.0,0.00
