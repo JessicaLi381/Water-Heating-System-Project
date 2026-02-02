@@ -1,12 +1,10 @@
-from py_compile import main
 import pandas as pd
 import numpy as np
 
 # Constants
-CP_WATER = 4180.0      # J/(kg·°C)
+CP_WATER = 4180.0      # J/(kg°C)
 MASS_WATER = 1.0       # kg 
 T_AMBIENT = 20.0       # °C
-EARLY_WINDOW_MIN = 10  # minutes used for "initial cooling rate" fit
 
 def analyze_data():
 
