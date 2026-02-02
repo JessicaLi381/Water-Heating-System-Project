@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 # Constants
 CP_WATER = 4180.0      # J/(kg°C)

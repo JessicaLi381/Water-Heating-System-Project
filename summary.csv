@@ -1,0 +1,7 @@
+material,start_temp,final_temp,final_heat_retained,final_time_min,cost_cad,performance_per_dollar
+BubbleWrap,60.0,41.3,89033.99999999999,30,1.5,59355.99999999999
+Cardboard,60.0,40.2,84436.00000000001,30,0.75,112581.33333333336
+Foam,60.0,45.0,104500.0,30,3.0,34833.333333333336
+FoilAirGap,60.0,41.0,87780.0,30,1.0,87780.0
+Thermos,60.0,54.8,145464.0,30,15.0,9697.6
+Towel,60.0,39.6,81928.0,30,2.0,40964.0

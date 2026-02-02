@@ -1,15 +1,12 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-#from analyze_data import process_csv, summary_csv
-df = pd.read_csv("processed_data.csv")
-summary = pd.read_csv("summary_csv")
-
 def plot_cooling_curve():
+    df = pd.read_csv("processed_data.csv")
 
-    for material in sorted(df["material"].unique()):
+    for material in sorted(df["material"].dropna().astype(str).unique()):
         material_data = df[df["material"]==material].sort_values("time_min")
-        plt.plot(material_data["time_min"], material_data["heat_retained_J"], label=material)
+        plt.plot(material_data["time_min"], material_data["heat_retained_j"], label=material)
     
     plt.figure()
     plt.title("Heat Retained vs Time (cooling curve)")
@@ -20,7 +17,9 @@ def plot_cooling_curve():
 
 def plot_temperature_curve():
 
-    for material in sorted(df["material"].unique()):
+    df = pd.read_csv("processed_data.csv")
+
+    for material in sorted(df["material"].dropna().astype(str).unique()):
         material_data = df[df["material"]==material].sort_values("time_min")
         plt.plot(material_data["time_min"], material_data["temp_C"], label=material)
 
@@ -32,6 +31,8 @@ def plot_temperature_curve():
     plt.show()
 
 def plot_summary():
+    summary = pd.read_csv("summary.csv")
+
     plt.figure()
     plt.title("Summary of Heat Retained by Material")
     plt.xlabel("Material")
