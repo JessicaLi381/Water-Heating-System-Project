@@ -1,1 +1,1 @@
-# Water-Heating-System-Project
+# Thermal-System-Project

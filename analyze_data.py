@@ -31,7 +31,7 @@ def analyze_data():
     )
 
     #compute performance per dollar
-    summary["performance_per_dollar"] = summary["final_heat_retained"] / summary["cost_cad"]
+    summary["performance_per_dollar"] = summary["final_heat_retained"] / summary["cost_cad"].replace(0, pd.NA)
 
     #save summary 
     summary.to_csv("summary.csv", index = False)
